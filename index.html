@@ -7,11 +7,11 @@
 <body>
 <code>
 <div class="topnav">
-  <a id=hometext class="active" href="/home">Home</a>
-  <a id=newstext href="#news">News</a>
-  <a id=contacttext href="#contact">Contact</a>
-  <a id=abouttext href="#about">About</a>
-  <a id=triviatext href="#trivia1">Trivia</a>
+  <a id=hometext class="active" href="">Home</a>
+  <a id=newstext href="#">News</a>
+  <a id=contacttext href="">Contact</a>
+  <a id=abouttext href="">About</a>
+  <a id=triviatext href="">Trivia</a>
 </div>
 </code>
 <style>
@@ -50,12 +50,12 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
 </style>
 <script>
 function space(amount) {for (var i = 0;i < amount;i++) {document.body.innerHTML+="<br>"}space(0)};function getsite(hreftext) {return (location.href).replace("/index.html","").replace("/news.html","").replace("/contact.html","").replace("/about.html","")+hreftext};function setup(home,news,contact,aboutd,trivia) {document.getElementById("hometext").href=home;document.getElementById("newstext").href=news;document.getElementById("contacttext").href=contact;document.getElementById("abouttext").href=about;document.getElementById("triviatext").href=trivia;if (1==0) {alert("Home text: "+document.getElementById("hometext").href+" News text: "+document.getElementById("newstext").href+" Contact text: "+document.getElementById("contacttext").href+" About text: "+document.getElementById("abouttext").href)}};
-var homelink = ""
-var newslink = ""
-var contactlink = ""
-var aboutlink = ""
-var trivialink = ""
-setup(homelink,newslink,contactlink,aboutlink,trivialink)
+//var homelink = ""
+//var newslink = ""
+//var contactlink = ""
+//var aboutlink = ""
+//var trivialink = ""
+//setup(homelink,newslink,contactlink,aboutlink,trivialink)
 </script>
 <code class=coding><h1 class=mainandsubtext>TRIVIA</h1><p class=mainandsubtext>Made by will</p></code>
 </body>
