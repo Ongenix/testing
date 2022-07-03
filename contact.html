@@ -15,7 +15,7 @@
 </div>
 </code>
 <style>
-
+import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 .topnav {
   background-color: #105C10;
   overflow: hidden;
@@ -37,7 +37,7 @@
   color: black;
 }
 
-
+#contacts {font-size: 25px;}
 .active {background-color: #0F4D0F;color: green;}
 
 body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/back_origin_pic/03/87/96/3fbd00861a5c680ebb9a2d83564c0aeb.jpg");background-repeat: no-repeat;background-size: 1200px 1200px;}
@@ -52,5 +52,5 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
 function space(amount) {for (var i = 0;i < amount;i++) {document.body.innerHTML+="<br>"}space(0)};function getsite(hreftext) {return (location.href).replace("/index.html","").replace("/news.html","").replace("/contact.html","").replace("/about.html","")+hreftext};function setup(home,news,contact,aboutd,trivia) {document.getElementById("hometext").href=home;document.getElementById("newstext").href=news;document.getElementById("contacttext").href=contact;document.getElementById("abouttext").href=about;document.getElementById("triviatext").href=trivia;if (1==0) {alert("Home text: "+document.getElementById("hometext").href+" News text: "+document.getElementById("newstext").href+" Contact text: "+document.getElementById("contacttext").href+" About text: "+document.getElementById("abouttext").href)}};
 </script>
 <code class=coding><h1 class=mainandsubtext>Contacts</h1><p class=mainandsubtext>Made by will</p></code>
-<code><p class=colour>Ongenix - Github</p></code>
+<code><p id=contacts class=colour>Ongenix - Github</p></code>
 </body>
