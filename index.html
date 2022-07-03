@@ -49,13 +49,13 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
 .coding p {font-size: 35px}
 </style>
 <script>
-function space(amount) {for (var i = 0;i < amount;i++) {document.body.innerHTML+="<br>"}space(0)};function getsite(hreftext) {return (location.href).replace("/index.html","").replace("/news.html","").replace("/contact.html","").replace("/about.html","")+hreftext};function setup(home,news,contact,about) {document.getElementById("hometext").href=home;document.getElementById("newstext").href=news;document.getElementById("contacttext").href=contact;document.getElementById("abouttext").href=about;document.getElementById("triviatext").href=trivia;if (1==0) {alert("Home text: "+document.getElementById("hometext").href+" News text: "+document.getElementById("newstext").href+" Contact text: "+document.getElementById("contacttext").href+" About text: "+document.getElementById("abouttext").href)}};
+function space(amount) {for (var i = 0;i < amount;i++) {document.body.innerHTML+="<br>"}space(0)};function getsite(hreftext) {return (location.href).replace("/index.html","").replace("/news.html","").replace("/contact.html","").replace("/about.html","")+hreftext};function setup(home,news,contact,aboutd,trivia) {document.getElementById("hometext").href=home;document.getElementById("newstext").href=news;document.getElementById("contacttext").href=contact;document.getElementById("abouttext").href=about;document.getElementById("triviatext").href=trivia;if (1==0) {alert("Home text: "+document.getElementById("hometext").href+" News text: "+document.getElementById("newstext").href+" Contact text: "+document.getElementById("contacttext").href+" About text: "+document.getElementById("abouttext").href)}};
 var homelink = ""
 var newslink = ""
 var contactlink = ""
 var aboutlink = ""
 var trivialink = ""
-setup(trivialink,homelink,newslink,contactlink,aboutlink)
+setup(homelink,newslink,contactlink,aboutlink,trivia)
 </script>
 <code class=coding><h1 class=mainandsubtext>TRIVIA</h1><p class=mainandsubtext>Made by will</p></code>
 </body>
