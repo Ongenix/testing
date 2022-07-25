@@ -69,6 +69,28 @@
   background-color: #2BA15A;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.box4 {
+  width: 165px;
+  height: 31px;
+  border: 10px solid green;
+  padding: 10px;
+  bottom:-3px;
+  left: 980px;
+  float: right;
+  position:absolute;
+  background-color: #2BA15A;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.submit {
+  width: 165px;
+  height: 31px;
+  border: 10px solid green;
+  padding: 10px;
+  display: block;
+  margin:0 auto;
+  background-color: #2BA15A;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+} 
 body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/back_origin_pic/03/87/96/3fbd00861a5c680ebb9a2d83564c0aeb.jpg");background-repeat: no-repeat;background-size: 1200px 1200px;}
 .mainandsubtext {color:#FCC1C0;background-image: url("https://1.bp.blogspot.com/_LApxKDsDWI0/TI6zTCn01ZI/AAAAAAAAE4k/ISpNUD5ouq0/s1600/%2BTwins72_gras3.png");background-repeat: no-repeat;background-size: 100px 100px;}
  {width:500px}
@@ -80,7 +102,10 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
 #center {
   display: block; margin: 0 auto;
   position:absolute;
-  width:100px;
+  width:200px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 #center2 {
   display: block; margin: 0 auto;
@@ -92,29 +117,70 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
   position:absolute;
   width:165px;
 }
+#center4 {
+  display: block; margin: 0 auto;
+  position:absolute;
+  width:165px;
+}
+#center5 {
+  display: block; margin: 0 auto;
+  position:absolute;
+  width:165px;
+  height: 35px
+}
+.selectors {
+visibility: hidden;
+font-size:10px;
+}
 </style>
 <script>
-1
+//.style.visibility="visible"
+function select(button) {var showing = document.getElementsByClassName("selectors");if (showing[button].style.visibility == "visible") {showing[button].style.visibility = "hidden"} else {showing[button].style.visibility = "visible";}
+if (button == 0) {showing[1].style.visibility = "hidden";showing[2].style.visibility = "hidden";showing[3].style.visibility = "hidden"}
+if (button == 1) {showing[0].style.visibility = "hidden";showing[2].style.visibility = "hidden";showing[3].style.visibility = "hidden"}
+if (button == 2) {showing[0].style.visibility = "hidden";showing[1].style.visibility = "hidden";showing[3].style.visibility = "hidden"}
+if (button == 3) {showing[0].style.visibility = "hidden";showing[1].style.visibility = "hidden";showing[2].style.visibility = "hidden"}
+};
+function submit() {
+var showing = document.getElementsByClassName("selectors");
+if (showing[0].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Correct!"};
+if (showing[1].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
+if (showing[2].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
+if (showing[3].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
+}
 </script>
 <code class=coding>
-
 <h1 class=mainandsubtext>TRIVIA</h1>
-<h2 class=subtext>Question 1</h2>
+<h2 class=subtext>Question 1 - Which is the best wedding present?</h2>
 <div class=box1>
 <p id=center>Roses</p>
-<button onclick="alert(1)" id=center class=startbutton hidden>Roses</button>
+<button onclick="select(0)" id=center class=startbutton hidden>Roses</button>
+<h1 class=selectors>💍</h1>
 </div>
 <div class=box2>
 <p id=center>Burgers</p>
-<button onclick="alert(2)" id=center2 class=startbutton hidden>Flowers</button>
+<button onclick="select(1)" id=center2 class=startbutton hidden>Flowers</button>
+<h1 class=selectors>💍</h1>
 </div>
 <div class=box3>
 <p id=center>Homework</p>
-<button onclick="alert(3)" id=center3 class=startbutton hidden>Flowers2</button>
+<button onclick="select(2)" id=center3 class=startbutton hidden>Homework</button>
+<h1 class=selectors>💍</h1>
+</div>
+<div class=box4>
+<p id=center>Dog Food</p>
+<button onclick="select(3)" id=center4 class=startbutton hidden>Dog Food</button>
+<h1 class=selectors>💍</h1>
+</div>
+<div class=submit>
+<p id=center>Submit!</p>
+<button onclick="submit()" id=center5 class=startbutton hidden>
 </div>
 </code>
 <br><br>
 </body>
+
+
 
 
 
