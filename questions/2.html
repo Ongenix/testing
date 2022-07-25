@@ -41,8 +41,8 @@
   color: green;
 }
 .box1 {
-  width: 100px;
-  height: 31px;
+  width: 150px;
+  height: 65px;
   border: 10px solid green;
   padding: 10px;
   float: left;
@@ -50,8 +50,8 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box2 {
-  width: 145px;
-  height: 31px;
+  width: 165px;
+  height: 65px;
   border: 10px solid green;
   padding: 10px;
   float: right;
@@ -59,7 +59,7 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box3 {
-  width: 165px;
+  width: 225px;
   height: 31px;
   border: 10px solid green;
   padding: 10px;
@@ -70,8 +70,8 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box4 {
-  width: 165px;
-  height: 31px;
+  width: 185px;
+  height: 60px;
   border: 10px solid green;
   padding: 10px;
   bottom:-3px;
@@ -90,7 +90,18 @@
   margin:0 auto;
   background-color: #2BA15A;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-} 
+}
+.box5 {
+  visibility: hidden;
+  width: 165px;
+  height: 31px;
+  border: 10px solid green;
+  padding: 10px;
+  display: block;
+  position: absolute;
+  left: 41.4%;
+  background-color: #2BA15A;
+}
 body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/back_origin_pic/03/87/96/3fbd00861a5c680ebb9a2d83564c0aeb.jpg");background-repeat: no-repeat;background-size: 1200px 1200px;}
 .mainandsubtext {color:#FCC1C0;background-image: url("https://1.bp.blogspot.com/_LApxKDsDWI0/TI6zTCn01ZI/AAAAAAAAE4k/ISpNUD5ouq0/s1600/%2BTwins72_gras3.png");background-repeat: no-repeat;background-size: 100px 100px;}
  {width:500px}
@@ -100,29 +111,52 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
 .coding p {font-size: 35px}
 .startbutton {opacity: 0.0;background-color:#2BA15A;padding: 5px 5px;border-radius: 10px;border-color:#0D4222;color:black;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
 #center {
-  display: block; margin: 0 auto;
+  display: block;
+  padding-left: 1.28571429em;
+  text-indent: -1.28571429em;
+  margin: 0 auto;
   position:absolute;
   width:200px;
   word-wrap: break-word;
   white-space: pre-wrap;
   word-break: break-word;
 }
+#centerbutton1 {
+  display: block;
+  padding-left: 1.28571429em;
+  text-indent: -1.28571429em;
+  margin: 0 auto;
+  position:absolute;
+  width:150px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  height: 60px
+}
 #center2 {
   display: block; margin: 0 auto;
   position:absolute;
   width:150px;
+  height: 60px
 }
 #center3 {
   display: block; margin: 0 auto;
   position:absolute;
-  width:165px;
+  width:230px;
 }
 #center4 {
   display: block; margin: 0 auto;
   position:absolute;
-  width:165px;
+  width:180px;
+  height: 60px
 }
 #center5 {
+  display: block; margin: 0 auto;
+  position:absolute;
+  width:165px;
+  height: 35px
+}
+#center6 {
   display: block; margin: 0 auto;
   position:absolute;
   width:165px;
@@ -147,38 +181,45 @@ if (showing[0].style.visibility == "visible") {document.getElementsByClassName("
 if (showing[1].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
 if (showing[2].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
 if (showing[3].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
+document.getElementsByClassName("box5")[0].style.visibility = "visible"
 }
 </script>
 <code class=coding>
 <h1 class=mainandsubtext>TRIVIA</h1>
-<h2 class=subtext>Question 1 - Which is the best wedding present?</h2>
+<h2 class=subtext>Question 1 - Which is the name of Stephen and Tonia's cats?</h2>
 <div class=box1>
-<p id=center>Roses</p>
-<button onclick="select(0)" id=center class=startbutton hidden>Roses</button>
+<p id=center>Leo and Rocky</p>
+<button onclick="select(0)" id=centerbutton1 class=startbutton hidden>Leo and Rocky.......</button>
 <h1 class=selectors>💍</h1>
 </div>
 <div class=box2>
-<p id=center>Burgers</p>
-<button onclick="select(1)" id=center2 class=startbutton hidden>Flowers</button>
+<p id=center>Milo and Joe</p>
+<button onclick="select(1)" id=center2 class=startbutton hidden>Milo and Joe</button>
 <h1 class=selectors>💍</h1>
 </div>
 <div class=box3>
-<p id=center>Homework</p>
-<button onclick="select(2)" id=center3 class=startbutton hidden>Homework</button>
+<p id=center>Leo and Joe</p>
+<button onclick="select(2)" id=center3 class=startbutton hidden>Leo and Joe</button>
 <h1 class=selectors>💍</h1>
 </div>
 <div class=box4>
-<p id=center>Dog Food</p>
-<button onclick="select(3)" id=center4 class=startbutton hidden>Dog Food</button>
+<p id=center>Rocky and Milo</p>
+<button onclick="select(3)" id=center4 class=startbutton hidden>Rocky and Milo</button>
 <h1 class=selectors>💍</h1>
 </div>
 <div class=submit>
 <p id=center>Submit!</p>
 <button onclick="submit()" id=center5 class=startbutton hidden>Submit</button>
 </div>
+<div class=box5>
+<p id=center>Next!</p>
+<button onclick='location.href="https://ongenix.github.io/testing/questions/3.html"' id=center6 class=startbutton>Next!</button>
+</div>
 </code>
 <br><br>
 </body>
+
+
 
 
 
