@@ -41,7 +41,7 @@
   color: green;
 }
 .box1 {
-  width: 205px;
+  width: 150px;
   height: 31px;
   border: 10px solid green;
   padding: 10px;
@@ -50,17 +50,17 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box2 {
-  width: 225px;
-  height: 100px;
+  width: 85px;
+  height: 31px;
   border: 10px solid green;
   padding: 10px;
-  left: 930px;
+  left: 1050px;
   position: absolute;
   background-color: #2BA15A;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box3 {
-  width: 200px;
+  width: 150px;
   height: 31px;
   border: 10px solid green;
   padding: 10px;
@@ -71,12 +71,12 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box4 {
-  width: 220px;
+  width: 106px;
   height: 31px;
   border: 10px solid green;
   padding: 10px;
   bottom:-3px;
-  left: 930px;
+  left: 1030px;
   float: right;
   position:absolute;
   background-color: #2BA15A;
@@ -101,6 +101,7 @@
   display: block;
   position: absolute;
   left: 41.4%;
+  bottom: 30%;
   background-color: #2BA15A;
 }
 body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/back_origin_pic/03/87/96/3fbd00861a5c680ebb9a2d83564c0aeb.jpg");background-repeat: no-repeat;background-size: 1200px 1200px;}
@@ -164,8 +165,8 @@ if (button == 3) {showing[0].style.visibility = "hidden";showing[1].style.visibi
 };
 function submit() {
 var showing = document.getElementsByClassName("selectors");
-if (showing[0].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
-if (showing[1].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Correct!"};
+if (showing[0].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Correct!"};
+if (showing[1].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
 if (showing[2].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
 if (showing[3].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
 document.getElementsByClassName("box5")[0].style.visibility = "visible"
@@ -173,26 +174,26 @@ document.getElementsByClassName("box5")[0].style.visibility = "visible"
 </script>
 <code class=coding>
 <h1 class=mainandsubtext>TRIVIA</h1>
-<h2 class=subtext>Question 3 - What is Stephen and Tonia's favourite hockey team?</h2>
+<h2 class=subtext>Question 4 - What is Tonia's favourite food?</h2>
 <div class=box1>
-<p id=center>The Flames</p>
-<button onclick="select(0)" id=center class=startbutton hidden>The Flames</button>
-<h1 class=selectors>🏒</h1>
+<p id=center>Chicken</p>
+<button onclick="select(0)" id=center class=startbutton hidden></button>
+<h1 class=selectors>💍</h1>
 </div>
 <div class=box2>
-<p id=center>The Toronto Maple Leafs</p>
+<p id=center>Fish</p>
 <button onclick="select(1)" id=center2 class=startbutton hidden>The Toronto Maple Leafs</button>
-<h1 class=selectors>🏒</h1>
+<h1 class=selectors>💍</h1>
 </div>
 <div class=box3>
-<p id=center>The Oilers</p>
+<p id=center>Burgers</p>
 <button onclick="select(2)" id=center3 class=startbutton hidden>The Oilers</button>
-<h1 class=selectors>🏒</h1>
+<h1 class=selectors>💍</h1>
 </div>
 <div class=box4>
-<p id=center>The Canucks</p>
+<p id=center>Fries</p>
 <button onclick="select(3)" id=center4 class=startbutton hidden>The Canucks</button>
-<h1 class=selectors>🏒</h1>
+<h1 class=selectors>💍</h1>
 </div>
 <div class=submit>
 <p id=center>Submit!</p>
@@ -200,11 +201,12 @@ document.getElementsByClassName("box5")[0].style.visibility = "visible"
 </div>
 <div class=box5>
 <p id=center>Next!</p>
-<button onclick='location.href="https://ongenix.github.io/testing/questions/4.html"' id=center6 class=startbutton>Next!</button>
+<button onclick='location.href="https://ongenix.github.io/testing/questions/5.html"' id=center6 class=startbutton>Next!</button>
 </div>
 </code>
 <br><br>
 </body>
+
 
 
 
