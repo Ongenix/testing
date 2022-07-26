@@ -41,8 +41,8 @@
   color: green;
 }
 .box1 {
-  width: 150px;
-  height: 31px;
+  width: 210px;
+  height: 100px;
   border: 10px solid green;
   padding: 10px;
   float: left;
@@ -50,18 +50,18 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box2 {
-  width: 85px;
+  width: 200px;
   height: 31px;
   border: 10px solid green;
   padding: 10px;
-  left: 1050px;
+  left: 950px;
   position: absolute;
   background-color: #2BA15A;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box3 {
-  width: 150px;
-  height: 31px;
+  width: 200px;
+  height: 100px;
   border: 10px solid green;
   padding: 10px;
   bottom:0;
@@ -71,12 +71,12 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .box4 {
-  width: 106px;
-  height: 31px;
+  width: 230px;
+  height: 70px;
   border: 10px solid green;
   padding: 10px;
   bottom:-3px;
-  left: 1030px;
+  left: 930px;
   float: right;
   position:absolute;
   background-color: #2BA15A;
@@ -123,6 +123,21 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
   white-space: pre-wrap;
   word-break: break-word;
 }
+#center100 {
+
+  display: block;
+  padding-left: 1.28571429em;
+  text-indent: -1.28571429em;
+  margin: 0 auto;
+  position:absolute;
+  width:200px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  height:100px
+
+
+}
 #center2 {
   display: block; margin: 0 auto;
   position:absolute;
@@ -132,11 +147,13 @@ body {background-color:#CCC1C0;background-image: url("https://png.pngtree.com/ba
   display: block; margin: 0 auto;
   position:absolute;
   width:165px;
+  height:100px;
 }
 #center4 {
   display: block; margin: 0 auto;
   position:absolute;
   width:165px;
+  height: 70px
 }
 #center5 {
   display: block; margin: 0 auto;
@@ -165,33 +182,33 @@ if (button == 3) {showing[0].style.visibility = "hidden";showing[1].style.visibi
 };
 function submit() {
 var showing = document.getElementsByClassName("selectors");
-if (showing[0].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Correct!"};
+if (showing[0].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
 if (showing[1].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
-if (showing[2].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
+if (showing[2].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Correct!"};
 if (showing[3].style.visibility == "visible") {document.getElementsByClassName("mainandsubtext")[0].innerText="Wrong!"};
 document.getElementsByClassName("box5")[0].style.visibility = "visible"
 }
 </script>
 <code class=coding>
 <h1 class=mainandsubtext>TRIVIA</h1>
-<h2 class=subtext>Question 4 - What is Tonia's favourite food?</h2>
+<h2 class=subtext>Question 5 - Where did Stephen and Tonia first meet?</h2>
 <div class=box1>
-<p id=center>Chicken</p>
-<button onclick="select(0)" id=center class=startbutton hidden></button>
+<p id=center>At a local Mary Browns</p>
+<button onclick="select(0)" id=center100 class=startbutton hidden>At a local Macdonalds</button>
 <h1 class=selectors>💍</h1>
 </div>
 <div class=box2>
-<p id=center>Fish</p>
+<p id=center>In Gander</p>
 <button onclick="select(1)" id=center2 class=startbutton hidden>The Toronto Maple Leafs</button>
 <h1 class=selectors>💍</h1>
 </div>
 <div class=box3>
-<p id=center>Burgers</p>
+<p id=center>Beaches Club in Fogo</p>
 <button onclick="select(2)" id=center3 class=startbutton hidden>The Oilers</button>
 <h1 class=selectors>💍</h1>
 </div>
 <div class=box4>
-<p id=center>Fries</p>
+<p id=center>On a hiking trail</p>
 <button onclick="select(3)" id=center4 class=startbutton hidden>The Canucks</button>
 <h1 class=selectors>💍</h1>
 </div>
@@ -201,7 +218,7 @@ document.getElementsByClassName("box5")[0].style.visibility = "visible"
 </div>
 <div class=box5>
 <p id=center>Next!</p>
-<button onclick='location.href="https://ongenix.github.io/testing/questions/5.html"' id=center6 class=startbutton>Next!</button>
+<button onclick='location.href="https://ongenix.github.io/testing/questions/end.html"' id=center6 class=startbutton>Next!</button>
 </div>
 </code>
 <br><br>
